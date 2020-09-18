@@ -79,8 +79,8 @@ public class Login extends HttpServlet {
             }
             // If the login is ok
             else if (( request.getParameter("login") != null 
-                    && request.getParameter("login").equals("admin")
-                    && request.getParameter("password").equals("root"))
+                    && request.getParameter("login").equals(USERNAME)
+                    && request.getParameter("password").equals(PASSWORD))
                     || cookieLogin != null) {
                 // If the cookie doesnt exist already
                 if (cookieLogin == null) {
